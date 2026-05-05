@@ -26,7 +26,7 @@ drawing_mode="freedraw", key="canvas",
 if canvas_result.image_data is not None:
 
 # Convertir el dibujo a 28x28 píxeles (formato MNIST)
-	img = cv2.resize(canvas_result.image_data.astype('uint8'), (28, 28))6
+	img = cv2.resize(canvas_result.image_data.astype('uint8'), (28, 28))
 	img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	img = img / 255.0 # Normalizar
 
